@@ -1,0 +1,21 @@
+<%- include("../header"); %>
+<div class="col-12">
+    <h1>Agregar producto</h1>
+    <form method="post" action="/productos/insertar">
+        <div class="form-group">
+            <label for="nombre">Nombre Empresa</label>
+            <input required id="nombre" placeholder="Nombre de Empresa" class="form-control" type="text"
+                name="nombre">
+        </div>
+        <div class="form-group">
+            <label for="descripcion">Descripcion</label>
+            <input required id="descripcion" placeholder="Descripcion" class="form-control" type="text"
+                name="descripcion">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success">Guardar</button>
+            &nbsp;<a href="/productos" class="btn btn-primary">Volver</a>
+        </div>
+    </form>
+</div>
+<%- include("../footer"); %>
